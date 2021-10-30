@@ -1,0 +1,128 @@
+@font-face {
+  font-family: "Vimland";
+  src: url('styles/Vimland.otf');}
+@font-face {
+  font-family: "Affectionetly_Yours";
+  src: url('styles/Affectionately Yours - TTF.ttf');
+  }
+@font-face {
+  font-family: "Quicksand";
+  src: url('styles/Quicksand_Book.otf');}
+*{
+  margin:0;
+  padding: 0 ;
+}
+.header{
+  min-height: 30vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(54, 59, 80, 0.7), rgba(4,9,30,0.7)),url(gambar/universe.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  font-family: "Quicksand", sans-serif;
+  letter-spacing: 5px;
+}
+
+.text-box{
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text-box h1{
+  font-size: 62px;
+  font-family: "Vimland", sans-serif ;
+  letter-spacing: 2mm;
+}
+.text-box p{
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: #fff;
+}
+
+@media(max-width: 700px){
+  .text-box h1{
+      font-size: 62px;
+  }
+}
+@media(max-width:700px){
+  .row{
+      flex-direction: column;
+  }
+}
+
+/*---what's new---*/
+.row{
+  margin-top: 7%;
+  display: flex;
+  justify-content: space-between;
+}
+h3{
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;}
+h1{
+  font-family: "Affectionetly_Yours", sans-serif;
+  font-size: 50px;
+}
+
+.new{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+.new-col{
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.new-col img{
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+}
+.layer{
+  background:transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.3s;
+}
+.layer:hover{
+  background:rgba(134, 146, 170, 0.7) ;
+}
+.layer h3{
+  width: 100%;
+  font-weight: 500;
+  color: #fff;
+  font-size: 26px;
+  bottom: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+.layer:hover h3{
+  bottom: 49%;
+  opacity: 1;
+}
+footer{
+  background-color:#c6c9d8;
+  text-align: center;
+  
+  font-family: "Vimland", sans-serif;
+  padding: 5px;
+}
+footer p {
+  color: rgb(20, 20, 20);
+  font-size: 30px;
+}

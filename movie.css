@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    z-index: 1000;
+}
+
+header .logo {
+    max-width: 50px;
+}
+
+header .toggle {
+    max-width: 30px;
+    cursor: pointer;
+}
+
+header .logo img,
+header .toggle img {
+    max-width: 100%;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 100px;
+    background: url(./movie/dune.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.banner .content {
+    max-width: 550px;
+}
+
+.banner .content h2 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 2.5em;
+    letter-spacing: 0.01em;
+    color: #fff;
+}
+
+.banner .content h2 span {
+    color: rgb(255, 187, 0);
+    font-size: 10px;
+}
+
+.banner .content p {
+    font-weight: 1.2em;
+    font-weight: 150;
+    letter-spacing: 3px;
+    line-height: 0.1em;
+    color: #fff;
+    margin: 15px 0 35px;
+}
+
+
+
+
+@keyframes animate {
+    0%,
+    100% {
+        background-position: top;
+    }
+    45%,
+    55% {
+        background-position: bottom;
+    }
+}
+
